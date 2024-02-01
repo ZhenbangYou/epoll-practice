@@ -45,7 +45,7 @@ const int MAX_EVENTS = 100;
 const int BUF_SIZE = 1024 - 1;
 const uint32_t EPOLL_OUT_EVENTS = EPOLLOUT | EPOLLET;
 const uint32_t EPOLL_IN_EVENTS = EPOLLIN | EPOLLONESHOT | EPOLLRDHUP | EPOLLET;
-constexpr std::string OUTPUT_DIR("./out/");
+std::string OUTPUT_DIR("./out/");
 
 void fetchAndSavePages(std::string path, int num_pages,
                        std::vector<std::string> &cumulative_messages) {
